@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cont-container {
+        width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 150px;
+    }
+    input[type="submit"] {
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4rem;
+        cursor: pointer;
+        background:linear-gradient(to right,darkblue,blue,lightblue) ;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+       
+    }
+</style>
+</head>
+
+<body>
+<img src="./assets/team_img.png" alt="#">
+   <div class="main_body" >
+    <nav>
+        <div class="left_nav">
+            <img src="./assets/logo_img.jpg" alt="reload">
+        </div>
+    </nav>
+    <main>
+        <div class="nav_list">
+            <div class="list_items">
+                <ul>
+                    <li><a href="./index.php">HOME</a></li>
+                    <li><a href="./Aboutus.html">ABOUT US</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1 id="contact">We'd love to hear from you</h1>
+
+
+        <div class="cont-container">
+            <h2>Contact Us</h2>
+            <form action="contact_submit.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+        
+    </main>
+   </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      body{
+        background-image: url('./assets/image_img.gif');
+        background-size: cover;
+      }
+      .registration{
+        background-image: url('./assets/nn_img.jpg');
+        background-size: cover;
+      }
+    </style>
+</head>
+
+<body>
+   <div class="main_body">
+    <nav>
+        <div class="left_nav">
+            <img src="./assets/logo_img.jpg" alt="">
+        </div>
+    </nav>
+    <main>
+        <div class="nav_list">
+            <div class="list_items">
+                <ul>
+                    <li><a href="./index.php">HOME</a></li>
+                    <li><a href="./Aboutus.html">ABOUT US</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                    <li><a href="./Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="registration">
+            <form action="" method="post">
+              <h2>Register for a New Account</h2>
+              <div class="input_group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" maxlength="30" required>
+              </div>
+              <div class="input_group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" maxlength="30" required>
+              </div>
+              <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" maxlength="10" required>
+              </div>
+              <div class="input-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" maxlength="10" required>
+              </div>
+              <div class="dob">
+                <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <!-- <input type="submit" value="Submit"> -->
+              </div>
+              <div class="gender">
+                <h3>Gender-</h3>
+            Male<input type="radio" name="r1" value="">
+            Female<input type="radio" name="r1" value="">
+              </div>
+              <div class="reg_btn"><button onclick="reg_data()"type="submit">Register</button>
+                <a href="./newRegisterpage.html"></a>
+              </div>
+            </form>
+          </div>
+    </main>
+   </div>
+   <script src="./javascript.js"></script>
+</body>
+</html>
